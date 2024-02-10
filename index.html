@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+  </head>
+  <body class="grid place-items-center bg-light-pink">
+    <header class="grid w-full place-items-center">
+      <picture>
+        <source
+          media="(max-width: 375px)"
+          srcset="./assets/images/background-pattern-mobile.svg"
+        />
+        <source
+          media="(min-width: 375px)"
+          srcset="./assets/images/background-pattern-desktop.svg"
+        />
+        <img
+          class="w-full"
+          src="./assets/images/background-pattern-desktop.svg"
+          alt="Background pattern"
+        />
+      </picture>
+    </header>
+    <main class="z-0 w-10/12 md:w-[678px]">
+      <div
+        class="z-10 mx-auto flex -translate-y-20 flex-col gap-5 rounded-md bg-white p-6 md:-translate-y-24"
+      >
+        <div class="flex items-center gap-5">
+          <svg
+            class="h-[22px] w-[22px]"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="41"
+            fill="none"
+            viewBox="0 0 40 41"
+          >
+            <path
+              fill="#AD28EB"
+              d="M37.5 20.5a2.467 2.467 0 0 1-1.64 2.344l-9.913 3.604-3.603 9.911a2.5 2.5 0 0 1-4.688 0l-3.604-9.922-9.911-3.593a2.5 2.5 0 0 1 0-4.688l9.921-3.604 3.594-9.911a2.5 2.5 0 0 1 4.688 0l3.604 9.921 9.911 3.594A2.467 2.467 0 0 1 37.5 20.5Z"
+            />
+          </svg>
+
+          <h1>FAQs</h1>
+        </div>
+        <!-- One-start -->
+        <div class="flex flex-col gap-3">
+          <button class="accordion-button flex items-center justify-between">
+            <h3 id="1" class="accordion-title hover:text-hover-purple">
+              What is Frontend Mentor, and how will it help me?
+            </h3>
+            <span id="1" class="accordion-svg open"></span>
+          </button>
+          <p id="1" class="accordion-text">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS and JavaScript. It's suitable for all levels and ideal for
+            portfolio building.
+          </p>
+          <hr />
+        </div>
+        <!-- One-end -->
+
+        <!-- Second-start -->
+        <div class="flex flex-col gap-3">
+          <button class="accordion-button flex items-center justify-between">
+            <h3 id="2" class="accordion-title hover:text-hover-purple">
+              Is Frontend Mentor free?
+            </h3>
+            <span id="2" class="accordion-svg"> </span>
+          </button>
+          <p id="2" class="accordion-text hidden">
+            Yes, Frontend Mentor offers both free and premium coding challenges,
+            with the free option providing access to a range of projects
+            suitable for all skill levels.
+          </p>
+          <hr />
+        </div>
+        <!-- Second-end -->
+
+        <!-- Third-start -->
+        <div class="flex flex-col gap-3">
+          <button class="accordion-button flex items-center justify-between">
+            <h3 id="3" class="accordion-title hover:text-hover-purple">
+              Can I use Frontend Mentor projects in my portfolio?
+            </h3>
+            <span id="3" class="accordion-svg"></span>
+          </button>
+          <p id="3" class="accordion-text hidden">
+            Yes, you can use projects completed on Frontend Mentor in your
+            portfolio. It's an excellent way to showcase your skills to
+            potential employers!
+          </p>
+          <hr />
+        </div>
+        <!-- Third-end -->
+
+        <!-- Fourth-start -->
+        <div class="flex flex-col gap-3">
+          <button
+            id="4"
+            class="accordion-button flex items-center justify-between"
+          >
+            <h3 id="4" class="accordion-title hover:text-hover-purple">
+              How can I get help if I'm stuck on a challenge?
+            </h3>
+            <span id="4" class="accordion-svg"></span>
+          </button>
+          <p id="4" class="accordion-text hidden">
+            The best place to get help is inside Frontend Mentor's Discord
+            community. There's a help channel where you can ask questions and
+            seek support from other community members.
+          </p>
+        </div>
+        <!-- Fourth-end -->
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

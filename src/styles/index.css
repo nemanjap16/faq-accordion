@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("../assets/fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400 600 700;
+}
+
+@font-face {
+  font-family: "Work Sans Italic";
+  src: url("../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: italic;
+  font-weight: 400 600 700;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-work-sans text-3xl font-bold text-dark-purple;
+  }
+
+  h3 {
+    @apply font-work-sans font-bold text-dark-purple;
+  }
+
+  p {
+    @apply h-auto font-work-sans text-[16px] text-grayish-purple;
+  }
+
+  picture {
+    width: 100%;
+  }
+}

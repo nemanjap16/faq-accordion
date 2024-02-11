@@ -22,8 +22,8 @@
     @apply font-work-sans text-3xl font-bold text-dark-purple;
   }
 
-  h3 {
-    @apply font-work-sans font-bold text-dark-purple;
+  h2 {
+    @apply font-work-sans font-bold text-inherit hover:text-hover-purple;
   }
 
   p {
@@ -32,5 +32,9 @@
 
   picture {
     width: 100%;
+  }
+
+  button {
+    @apply text-dark-purple outline-hover-purple;
   }
 }

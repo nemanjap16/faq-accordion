@@ -41,12 +41,27 @@ window.onload = () => {
     accordionText.forEach((text) => {
       if (text.id == id) {
         text.classList.toggle("hidden");
+
+        if (text.ariaHidden == "false") {
+          text.setAttribute("aria-hidden", "true");
+        } else {
+          text.setAttribute("aria-hidden", "false");
+        }
       }
     });
   };
 
   accordionButton.forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (event) => {
+      // targeting HTML elements
+      const targetButton = event.currentTarget as HTMLButtonElement;
+
+      if (targetButton.ariaExpanded == "true") {
+        targetButton.setAttribute("aria-expanded", "false");
+      } else {
+        targetButton.setAttribute("aria-expanded", "true");
+      }
+
       toggleClass(button.children[0].id);
       button.children[1].classList.toggle("open");
       setupSVG();

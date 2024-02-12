@@ -40,8 +40,7 @@ window.onload = () => {
   const toggleClass = (id: number | string) => {
     accordionText.forEach((text) => {
       if (text.id == id) {
-        text.classList.toggle("hidden");
-
+        // text.classList.toggle("hidden");
         if (text.ariaHidden == "false") {
           text.setAttribute("aria-hidden", "true");
         } else {

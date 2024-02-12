@@ -26,7 +26,7 @@
   }
 
   p {
-    @apply h-auto font-work-sans text-[16px] text-grayish-purple;
+    @apply h-auto overflow-hidden font-work-sans text-[16px] text-grayish-purple;
   }
 
   picture {
@@ -35,5 +35,15 @@
 
   button {
     @apply text-dark-purple outline-hover-purple;
+  }
+
+  div.accordion-text {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 300ms ease-out;
+  }
+
+  div[aria-hidden="false"] {
+    grid-template-rows: 1fr;
   }
 }

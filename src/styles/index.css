@@ -22,7 +22,7 @@
   }
 
   h2 {
-    @apply font-work-sans font-bold text-inherit hover:text-hover-purple;
+    @apply text-left font-work-sans font-bold text-inherit hover:text-hover-purple;
   }
 
   p {
@@ -35,6 +35,10 @@
 
   button {
     @apply text-dark-purple outline-hover-purple;
+  }
+
+  span {
+    @apply pl-2;
   }
 
   div.accordion-text {

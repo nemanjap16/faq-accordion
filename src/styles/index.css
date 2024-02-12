@@ -1,14 +1,13 @@
 @font-face {
   font-family: "Work Sans";
-  src: url("../assets/fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+  src: url("@fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
   font-style: normal;
   font-weight: 400 600 700;
 }
 
 @font-face {
   font-family: "Work Sans Italic";
-  src: url("../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("@fonts/WorkSans-Italic-VariableFont_wght.ttf") format("truetype");
   font-style: italic;
   font-weight: 400 600 700;
 }

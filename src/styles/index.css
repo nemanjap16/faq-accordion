@@ -23,7 +23,7 @@
     @apply font-work-sans text-3xl font-bold text-dark-purple;
   }
 
-  h2 {
+  span.accordion-title {
     @apply text-left font-work-sans font-bold text-inherit hover:text-hover-purple;
   }
 

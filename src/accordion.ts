@@ -37,9 +37,9 @@ window.onload = () => {
     });
   };
 
-  const toggleClass = (id: number | string) => {
+  const toggleClass = (id: number | string | undefined) => {
     accordionText.forEach((text) => {
-      if (text.id == id) {
+      if (text.dataset.id == id) {
         // text.classList.toggle("hidden");
         if (text.ariaHidden == "false") {
           text.setAttribute("aria-hidden", "true");
@@ -61,7 +61,8 @@ window.onload = () => {
         targetButton.setAttribute("aria-expanded", "true");
       }
 
-      toggleClass(button.children[0].id);
+      const el = button.children[0] as HTMLElement;
+      toggleClass(el.dataset.id);
       button.children[1].classList.toggle("open");
       setupSVG();
     });
